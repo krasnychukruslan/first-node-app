@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>Master paper</title>
+<script
+  src="https://code.jquery.com/jquery-3.2.0.min.js"
+  integrity="sha256-JAW99MJVpJBGcbzEuXk4Az05s/XyDdBomFqNlM3ic+I="
+  crossorigin="anonymous"></script>
+<script>
+	
+	function sendRequest() {
+		$.ajax({
+			method: 'GET',
+			url: '/user'
+		}).done((res) => {
+			alert(res);
+		})
+	}
+</script>
+
+</head>
+<body>
+
+<h1>Магістерська робота Руслана Красничука</h1>
+
+
+
+<button onclick="sendRequest()">Start request</button>
+
+
+
+</body>
+</html>
